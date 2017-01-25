@@ -1,0 +1,214 @@
+body{
+   background-image: url("image/HDWallpapers.in_.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    color: #fff;
+}
+h1{
+    text-align: center;
+    height: 40px;
+    padding: 20px;
+    font-family: cursive;
+} 
+footer{
+    text-align: center;
+    border-top: 2px solid white;
+    border-radius: 0;
+    background-color: rgba(28, 28, 28, 0.7);
+    margin: 0px;
+    padding: 30px;
+    height: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 13pt;
+    color:whitesmoke;
+    font-weight: inherit;
+    font-family: cursive;
+}
+#headers{
+background-color: rgba(28, 28, 28, 0.7);
+   text-align: center;
+    position: fixed;
+    width: 100%;
+    
+}
+#contain{
+text-align: center;
+  margin: 0 auto;
+    padding: 0 auto;
+    width: 250px;
+    position: relative;
+    margin-top: 250px;
+    margin-bottom: 250px; 
+}
+
+#startbtn{
+width: 250px;
+height: 70px;
+border: 2px solid whitesmoke;
+border-radius: 2px;
+background-color: rgba(00, 00, 00, 0.4) ;
+color: white;
+font-size: 30pt;
+
+}
+#container{
+  
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: rgba(00, 00, 00, 0.4);
+  margin-top: 90px;
+  border-radius: 50px;
+
+}
+#ques{
+    text-align: center;
+    width: 99.9%;
+    height: 50px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 61px;
+    border: 1px solid whitesmoke;
+}
+:hover#startbtn{
+    background-color: rgba(00, 00, 00, 0.85)
+}
+#about{
+    width: 108px;
+    height: 40px;
+    font-size: 15pt;
+    font-family: cursive;
+    background-color: rgba(00, 00, 00, 0.2);
+}
+:hover#about{
+    background-color: rgba(00, 00, 00, 0.85);
+}
+a
+{    text-decoration: none;
+}
+h3{
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+}
+#q1{
+float: left;
+margin: 10px;
+padding: 6px;
+font-family: cursive;
+font-size: 16pt;
+}
+#st{
+float: right;
+margin: 10px;
+padding: 6px;
+font-family: cursive;
+font-size: 16pt;
+}
+#h4q{
+    font-family: cursive;
+    font-size: 15pt;
+    margin-top: 10px;
+}
+#nxt{
+     float: right;
+    margin-right: 30px;
+    outline: none;
+    border: 1px solid;
+    width: 90px;
+    height: 35px;
+    font-size: 18pt;
+    background-color: transparent;
+    transition: 0.5s;
+    border-radius: 45px;
+    margin-top:0 auto;
+    font-family: cursive;
+}
+:hover#nxt{
+    background-color: white;
+    color: black;
+}
+li{
+    list-style: none;
+}
+#fleft{
+    float: left;
+}
+#scor{
+    visibility: hidden;
+}
+#que{
+    margin: 5px;
+    font-family: cursive;
+    padding: 5px;
+    font-size: 13pt;
+}
+.radio{
+    margin: 5px;
+    padding: 5px;
+    margin-top: 20px;
+}
+.op{
+    font-family: cursive;
+    font-size: 13pt;
+}
+#scorediv{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: -250px;
+   visibility: hidden;
+
+}
+.rightques , .scrper{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20pt;
+    border: 2px solid white;
+}
+#rightques , #scrper{
+    margin: 60px;
+    padding: 20px;
+    text-align: center;
+    font-family: cursive;
+    border: 2px solid transparent;
+    font-size: 24pt;
+    /*margin-top: 100px;*/
+    
+
+}
+h5{
+    font-family: cursive;
+    color: lightsalmon;
+    font-size: 18pt;
+}
+#trybtn{
+  
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15pt;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 90px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+
+}
+:hover#trybtn{
+    background-color:whitesmoke;
+    color:black;
+}
+a{
+    color: olive;
+}
+
