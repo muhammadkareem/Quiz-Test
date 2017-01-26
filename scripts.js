@@ -1,6 +1,41 @@
 var atmpques = 0; //0 counter var creat for attemp ques....
 var corected = 0; //0 colection right ans but use counter colection.....
 var testq = document.getElementById("tstq");
+var time = document.getElementById("times");
+
+            // TIMER
+
+
+function timer(){
+    var min = 4;
+    var sec = 59;
+    var int = setInterval(function(){
+        if(min < 10 && sec < 10){
+            time.innerHTML = "0" + min + ":" + "0" + sec;
+        }
+        else if( min < 10){
+            time.innerHTML = "0" + min + ":" + sec;
+        }
+        else if( sec < 10){
+            time.innerHTML = min + ":"+ "0" + sec;
+        }
+        
+       else{ time.innerHTML = min + ":" + sec;}
+        sec--;
+        
+         if(min < 0){
+            clearInterval(int);
+            time.innerHTML = "Time Out";
+            result();
+        
+        }
+        else if(sec == 0){
+            min--;
+            sec = 60;
+        }
+    }, 1000);
+}
+
 //only one array created index wise add object ...!!!
 var quizques = [
     {
@@ -156,6 +191,7 @@ var quizques = [
 ]
 
 function startbtn() {
+    window.location.href = "quiz.html";
     var nxtb = document.getElementById("nxt");
     nxtb.setAttribute("disabled","disabled");
 
@@ -215,36 +251,7 @@ corected++
     }
     }
 }
- var p = document.getElementById("ctimes");
-  function timers(){
-    var min = 4;
-    var sec = 59;
-    var int = setInterval(function(){
-        if(min < 10 && sec < 10){
-            p.innerHTML = "0" + min + ":" + "0" + sec;
-        }
-        else if( min < 10){
-            p.innerHTML = "0" + min + ":" + sec;
-        }
-        else if( sec < 10){
-            p.innerHTML = min + ":"+ "0" + sec;
-        }
-        
-       else{ p.innerHTML = min + ":" + sec;}
-        sec--;
-        
-         if(min < 0){
-            clearInterval(int);
-            p.innerHTML = "Time out...!";
-            result();
-        
-        }
-        else if(sec == 0){
-            min--;
-            sec = 60;
-        }
-    }, 1000);
-}
+
 
 function result(){
  var crtans = corected/quizques.length * 100;
